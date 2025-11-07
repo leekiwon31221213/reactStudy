@@ -16,6 +16,11 @@ import React논리연산자조건부렌더링 from "./React논리연산자조건
 import React삼항연산자렌더링 from "./React삼항연산자조건부렌더링.jsx";
 import React목록List from "./React목록List.jsx";
 import React폼 from "./React폼.jsx";
+import React폼제출 from "./React폼제출.jsx";
+import ReactTextarea from "./ReactTextarea.jsx";
+import ReactSelect옵션 from "./ReactSelect.jsx";
+import ReactForms여러필드입력 from "./ReactForms여러필드입력.jsx";
+import React체크박스 from "./React체크박스.jsx";
 
 // person 객체 정의 추가 (React프롭스 컴포넌트에서 사용)
 const person = {
@@ -43,5 +48,10 @@ createRoot(document.getElementById("root")).render(
     <React삼항연산자렌더링 삼항연산자={true}></React삼항연산자렌더링>
     <React목록List></React목록List>
     <React폼></React폼>
+    <React폼제출></React폼제출>
+    <ReactTextarea></ReactTextarea>
+    <ReactSelect옵션></ReactSelect옵션>
+    <ReactForms여러필드입력></ReactForms여러필드입력>
+    <React체크박스></React체크박스>
   </StrictMode>
 );
