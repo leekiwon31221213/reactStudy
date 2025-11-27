@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function React체크박스() {
   const [inputs, setInputs] = useState({});
-
   const handleChange = (e) => {
     const target = e.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
@@ -12,34 +11,54 @@ function React체크박스() {
 
   const handleSubmit = (event) => {
     let fillings = "";
-    if (inputs.tomato) fillings += "tomato";
-    if (inputs.onion) {
-      if (inputs.tomato) fillings += " and ";
-      fillings += "onion";
+    const firstName = document.getElementById("firstname");
+
+    if (!firstName.value) {
+      alert("이름을 입력해주세요");
+      firstName.focus();
+      event.preventDefault();
+      return;
     }
-    if (fillings == "") fillings = "no fillings";
-    alert(`${inputs.firstname} wants a burger with ${fillings}`);
+
+    if (inputs.tomato) {
+      fillings = fillings + "토마토";
+    }
+
+    if (inputs.onion) {
+      if (inputs.tomato) {
+        fillings = fillings + " 그리고 ";
+      }
+      fillings = fillings + "양파";
+    }
+
+    if (fillings === "") {
+      fillings = "추가 재료 없음";
+    }
+
+    alert(`${inputs.firstname}님은 ${fillings} 버거를 원합니다`);
+
     event.preventDefault();
   };
-
   return (
     <>
       <form onSubmit={handleSubmit}>
         <label>
-          나의 이름은
-          <input type="text" name="firstname" value={inputs.firstname} onChange={handleChange} />
+          내 이름은:
+          <input type="text" id="firstname" name="firstname" value={inputs.firstname} onChange={handleChange} />
         </label>
 
-        <p>I want a burger with:</p>
+        <p>나는 햄버거에 이걸 추가할게요</p>
         <label>
-          Tomato:
+          토마토:
           <input type="checkbox" name="tomato" checked={inputs.tomato} onChange={handleChange} />
         </label>
+
         <label>
-          Onion:
+          양파:
           <input type="checkbox" name="onion" checked={inputs.onion} onChange={handleChange} />
         </label>
-        <button type="submit">Submit</button>
+
+        <button type="submit">제출하기</button>
       </form>
     </>
   );
