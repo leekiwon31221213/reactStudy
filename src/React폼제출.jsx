@@ -14,6 +14,7 @@ function React폼제출() {
 
   return (
     <>
+      <h1>리액트 폼 제출</h1>
       <form onSubmit={handleSubmit}>
         <label>
           <span>이름 엔터</span>

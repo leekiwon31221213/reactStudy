@@ -28,6 +28,7 @@ function ReactForms여러필드입력() {
 
   return (
     <>
+      <h1>리액트 여러필드 입력</h1>
       <form>
         <label>
           <span>첫번째 이름:</span>
@@ -38,7 +39,7 @@ function ReactForms여러필드입력() {
           <input type="text" name="두번째이름" value={inputs.두번째이름} onChange={handleChange} />
         </label>
         <p>
-          벨류　{inputs.첫번째이름} + {inputs.두번째이름}
+          벨류 {inputs.첫번째이름} + {inputs.두번째이름}
         </p>
       </form>
     </>

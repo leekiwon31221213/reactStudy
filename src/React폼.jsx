@@ -16,6 +16,7 @@ function React폼() {
   }
   return (
     <>
+      <h1>리액트 폼</h1>
       <form>
         <label>
           <span>리액트 폼</span>

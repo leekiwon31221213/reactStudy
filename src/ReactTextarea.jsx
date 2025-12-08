@@ -8,6 +8,7 @@ function React텍스트영역() {
   }
   return (
     <>
+      <h1>리액트 텍스트에어리어</h1>
       <textarea name={text} onChange={handleChange}></textarea>
       <p>{text}</p>
     </>

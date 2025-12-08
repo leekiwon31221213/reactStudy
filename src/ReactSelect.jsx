@@ -14,6 +14,7 @@ function ReactSelect옵션() {
 
   return (
     <>
+      <h1>리액트 셀렉트</h1>
       <select value={select} onChange={handleChange}>
         <option value="치킨">치킨</option>
         <option value="피자">피자</option>

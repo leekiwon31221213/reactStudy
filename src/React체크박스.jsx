@@ -41,6 +41,7 @@ function React체크박스() {
   };
   return (
     <>
+      <h1>리액트 체크박스</h1>
       <form onSubmit={handleSubmit}>
         <label>
           내 이름은:
