@@ -26,6 +26,8 @@ import React라디오버튼 from "./React라디오";
 import React포털 from "./React포털";
 import React서스펜서 from "./React서스펜스";
 import React스타일CSS from "./React스타일CSS";
+import React심화스타일모듈 from "./React심화스타일모듈";
+import React스타일인자바스크립트 from "./ReactCssInJs";
 
 // person 객체 정의 추가 (React프롭스 컴포넌트에서 사용)
 const person = {
@@ -64,5 +66,7 @@ createRoot(document.getElementById("root")).render(
 
     <React서스펜서></React서스펜서>
     <React스타일CSS></React스타일CSS>
+    <React심화스타일모듈></React심화스타일모듈>
+    <React스타일인자바스크립트></React스타일인자바스크립트>
   </StrictMode>
 );

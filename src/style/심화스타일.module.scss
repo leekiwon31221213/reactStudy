@@ -1,0 +1,23 @@
+.h1 {
+  color: #fff;
+  font-weight: 600;
+  background-color: cornflowerblue;
+  font-size: 25px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+  color: red;
+}
+
+:global(.global) {
+  padding: 20px;
+  color: #fff;
+  background-color: cadetblue;
+  font-size: 25px;
+}
+.localClass {
+  font-size: 23px;
+  font-weight: 600;
+  color: red;
+}
