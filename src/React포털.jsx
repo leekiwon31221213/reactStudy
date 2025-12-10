@@ -27,7 +27,6 @@ function PotalModal({ isOpen, onClose, children }) {
         opacity: isOpen ? 1 : 0,
         transition: "opacity 0.3s ease, visibility 0.3s ease",
 
-        // 안 보일 때 클릭 안 되게 막기
         pointerEvents: isOpen ? "auto" : "none",
       }}
     >
@@ -36,7 +35,6 @@ function PotalModal({ isOpen, onClose, children }) {
           background: "white",
           padding: "20px",
           borderRadius: "8px",
-          transform: isOpen ? "scale(1)" : "scale(0.95)",
           transition: "transform 0.3s ease",
         }}
       >
