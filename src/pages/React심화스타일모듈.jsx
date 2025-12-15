@@ -8,7 +8,7 @@ CSS 클래스 이름 충돌을 방지하고 스타일을 더 쉽게 유지 관�
 .module.css , .module.scss로 파일로 가져올 수 있음
 
 */
-import styles from "./style/심화스타일.module.scss";
+import styles from "../style/심화스타일.module.scss";
 function React심화스타일모듈() {
   return (
     <>

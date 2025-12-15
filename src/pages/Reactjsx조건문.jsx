@@ -1,4 +1,4 @@
-function 조건문() {
+function Reactjsx조건문() {
   /* if문은 지원하지만 jsx에서는 지원하지 않으며 삼항연산자를 사용해야함 */
 
   const x = 3;
@@ -21,4 +21,4 @@ function 조건문() {
   );
 }
 
-export default 조건문;
+export default Reactjsx조건문;

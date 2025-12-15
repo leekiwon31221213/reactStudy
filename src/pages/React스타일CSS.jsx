@@ -3,8 +3,8 @@
 2.외부스타일시트 import
 3.css모듈
 */
-import "./style/외부스타일시트.scss";
-import styles from "./style/스타일.module.scss";
+import "../style/외부스타일시트.scss";
+import styles from "../style/스타일.module.scss";
 function React스타일CSS() {
   const jsCss = {
     backgroundColor: "#339DDC",

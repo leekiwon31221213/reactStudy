@@ -1,4 +1,4 @@
-function App(props) {
+function React배열Array(props) {
   /* 배열 Array */
   const fruit = ["apple", "banana", "orange"];
 
@@ -37,4 +37,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default React배열Array;

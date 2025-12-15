@@ -1,4 +1,4 @@
-function 전개연산자() {
+function React전개연산자() {
   const number1 = [1, 2, 3];
   const number2 = [4, 5, 6];
   const numberGroup = [...number1, ...number2];
@@ -18,4 +18,4 @@ function 전개연산자() {
   console.log({ ...friend, ...friend_more });
 }
 
-export default 전개연산자;
+export default React전개연산자;

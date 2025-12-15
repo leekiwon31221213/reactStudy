@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Jsx속성() {
+function Reactjsx속성() {
   const [count, setCount] = useState(0);
 
   const eventHandler = () => {
@@ -31,4 +31,4 @@ function Jsx속성() {
   );
 }
 
-export default Jsx속성;
+export default Reactjsx속성;
