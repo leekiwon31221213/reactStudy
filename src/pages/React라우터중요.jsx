@@ -39,7 +39,7 @@ npm install react-router-dom
 function React라우터중요() {
   return (
     <>
-      <nav>
+      <nav className="sub-menu">
         <Link to="test1">Router테스트1</Link>
         <Link to="test2">Router테스트2</Link>
       </nav>

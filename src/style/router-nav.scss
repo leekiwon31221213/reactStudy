@@ -5,3 +5,11 @@
     margin-bottom: 20px;
   }
 }
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  a {
+    margin-bottom: 10px;
+  }
+}
