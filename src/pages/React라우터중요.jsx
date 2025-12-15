@@ -29,10 +29,11 @@ npm install react-router-dom
 1. /router/* 
 같은 부모 라우트는 계속 화면에 남아 있고, 그 안에서 하위 페이지가 바뀌는 방식
 
-2. React라우터중요 안에서 
-<Link to="test1"> 이런 식으로 서브 메뉴를 만듬
+2. Link는 “이동할 주소(목적지)”
+<Link to="/router/test1"> 이런 식으로 서브 메뉴를 만듬
 
-3.<Routes> 안에 <Route path="test1" element={<Router테스트1 />} />
+3. Route의 path는 “이 주소일 때 어떤 컴포넌트를 보여줄지”
+<Routes> 안에 <Route path="test1" element={<Router테스트1 />} />
 이런 식으로 “어떤 서브 메뉴를 누르면 어떤 컴포넌트를 보여줄지” 지정
 
 */
@@ -40,8 +41,8 @@ function React라우터중요() {
   return (
     <>
       <nav className="sub-menu">
-        <Link to="test1">Router테스트1</Link>
-        <Link to="test2">Router테스트2</Link>
+        <Link to="/router/test1">Router테스트1</Link>
+        <Link to="/router/test2">Router테스트2</Link>
       </nav>
 
       <Routes>
