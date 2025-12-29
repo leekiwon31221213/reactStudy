@@ -1,6 +1,10 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Router테스트1 from "./Router/Router테스트1";
 import Router테스트2 from "./Router/Router테스트2";
+import RouterOutlet from "./Router/RouterOutlet";
+import RouterActive스타일 from "./Router/RouterActive스타일";
+import RouterUrl매개변수 from "./Router/RouterUrl매개변수";
+
 /* 
 리엑트 Router(라우터)
 
@@ -37,20 +41,40 @@ npm install react-router-dom
 이런 식으로 “어떤 서브 메뉴를 누르면 어떤 컴포넌트를 보여줄지” 지정
 
 */
+
+/* 
+👉 Link와 NavLink 차이 
+Link : 그냥 이동만 함
+NavLink : 이동 + 선택된 메뉴인지 확인 가능 
+*/
+
 function React라우터중요() {
   return (
     <>
       <nav className="sub-menu">
         <Link to="/router/test1">Router테스트1</Link>
         <Link to="/router/test2">Router테스트2</Link>
+        <Link to="/router/outlet">리액트 outlet</Link>
+        <Link to="/router/actvieStyle">active 메뉴</Link>
+        <Link to="/router/url-parameter">Router Url 매개변수</Link>
       </nav>
 
       <Routes>
         <Route path="test1" element={<Router테스트1 />} />
-      </Routes>
-
-      <Routes>
         <Route path="test2" element={<Router테스트2 />} />
+        {/* 아우렛 (Outlet) */}
+        <Route path="outlet" element={<RouterOutlet />}>
+          <Route path="test1" element={<Router테스트1 />} />
+          <Route path="test2" element={<Router테스트2 />} />
+        </Route>
+        {/* 메뉴에 Active */}
+        <Route path="actvieStyle" element={<RouterActive스타일 />}>
+          <Route path="test1" element={<Router테스트1 />} />
+          <Route path="test2" element={<Router테스트2 />} />
+        </Route>
+
+        {/* URL 매개변수 */}
+        <Route path="url-parameter/*" element={<RouterUrl매개변수 />}></Route>
       </Routes>
     </>
   );
