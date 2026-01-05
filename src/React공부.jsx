@@ -28,6 +28,10 @@ import React스타일CSS from "./pages/React스타일CSS";
 import React심화스타일모듈 from "./pages/React심화스타일모듈";
 import React스타일인자바스크립트 from "./pages/ReactCssInJs";
 import React라우터중요 from "./pages/React라우터중요";
+import ReactTransitions전환 from "./pages/ReactTransitions전환";
+import ReactForwardRef from "./pages/ReactForwardRef";
+import ReactHook from "./pages/ReactHook";
+import ReactUseStateHook from "./pages/ReactUseStateHook";
 
 // person 객체 정의 추가 (React프롭스 컴포넌트에서 사용)
 const person = {
@@ -69,6 +73,10 @@ function React공부모음() {
           <Link to="/css-module">25. 스타일모듈</Link>
           <Link to="/css-in-js">26. 스타일JS</Link>
           <Link to="/router">27. 라우터중요</Link>
+          <Link to="/react-transitions">28. React 전환(transitions)</Link>
+          <Link to="/forward-ref">29. ReactForwardRef(포워드레프)</Link>
+          <Link to="/hook">30. ReactHook(훅)</Link>
+          <Link to="/useState-hook">31. ReactUseStateHook(유즈스테이트훅)</Link>
         </nav>
 
         <Routes>
@@ -99,6 +107,12 @@ function React공부모음() {
           <Route path="/css-module" element={<React심화스타일모듈 />} />
           <Route path="/css-in-js" element={<React스타일인자바스크립트 />} />
           <Route path="/router/*" element={<React라우터중요></React라우터중요>} />
+
+          <Route path="/react-transitions" element={<ReactTransitions전환></ReactTransitions전환>}></Route>
+
+          <Route path="/forward-ref" element={<ReactForwardRef></ReactForwardRef>}></Route>
+          <Route path="/hook" element={<ReactHook></ReactHook>}></Route>
+          <Route path="/useState-hook" element={<ReactUseStateHook></ReactUseStateHook>}></Route>
         </Routes>
       </BrowserRouter>
     </>
