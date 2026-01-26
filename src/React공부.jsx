@@ -32,6 +32,8 @@ import ReactTransitions전환 from "./pages/ReactTransitions전환";
 import ReactForwardRef from "./pages/ReactForwardRef";
 import ReactHook from "./pages/ReactHook";
 import ReactUseStateHook from "./pages/ReactUseStateHook";
+import ReactuseEffectHook from "./pages/ReactuseEffectHook";
+import ReactuseContext from "./pages/ReactuseContext";
 
 // person 객체 정의 추가 (React프롭스 컴포넌트에서 사용)
 const person = {
@@ -77,6 +79,8 @@ function React공부모음() {
           <Link to="/forward-ref">29. ReactForwardRef(포워드레프)</Link>
           <Link to="/hook">30. ReactHook(훅)</Link>
           <Link to="/useState-hook">31. ReactUseStateHook(유즈스테이트훅)</Link>
+          <Link to="/useEffect-hook">32. ReactuseEffectHook(유즈이펙트훅)</Link>
+          <Link to="/useContext-hook">33. useContextHook(유즈콘텍스트훅)</Link>
         </nav>
 
         <Routes>
@@ -113,6 +117,8 @@ function React공부모음() {
           <Route path="/forward-ref" element={<ReactForwardRef></ReactForwardRef>}></Route>
           <Route path="/hook" element={<ReactHook></ReactHook>}></Route>
           <Route path="/useState-hook" element={<ReactUseStateHook></ReactUseStateHook>}></Route>
+          <Route path="/useEffect-hook" element={<ReactuseEffectHook></ReactuseEffectHook>}></Route>
+          <Route path="/useContext-hook" element={<ReactuseContext></ReactuseContext>}></Route>
         </Routes>
       </BrowserRouter>
     </>
