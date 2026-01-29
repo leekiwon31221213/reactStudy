@@ -34,7 +34,13 @@ import ReactHook from "./pages/ReactHook";
 import ReactUseStateHook from "./pages/ReactUseStateHook";
 import ReactuseEffectHook from "./pages/ReactuseEffectHook";
 import ReactuseContext from "./pages/ReactuseContext";
+import ReactUseRefHook from "./pages/ReactUseRefHook";
 
+import ReactUseReducer from "./pages/ReactUseReducer";
+
+import ReactUseCallBack from "./pages/ReactUseCallBack";
+import ReactUseMemo from "./pages/ReactUseMemo";
+import ReactCustomHook from "./pages/ReactCustomHook";
 // person 객체 정의 추가 (React프롭스 컴포넌트에서 사용)
 const person = {
   name: "홍길동",
@@ -81,6 +87,11 @@ function React공부모음() {
           <Link to="/useState-hook">31. ReactUseStateHook(유즈스테이트훅)</Link>
           <Link to="/useEffect-hook">32. ReactuseEffectHook(유즈이펙트훅)</Link>
           <Link to="/useContext-hook">33. useContextHook(유즈콘텍스트훅)</Link>
+          <Link to="/useRef-hook">34. useRefHook(유즈레프훅)</Link>
+          <Link to="/useReducer-hook">35. useReducer(유즈리듀서)</Link>
+          <Link to="/useCallback-hook">36. useCallback(유즈콜백)</Link>
+          <Link to="/useMemo-hook">37. useMemo(유즈메모)</Link>
+          <Link to="/custom-hook">38. customHook(커스텀훅)</Link>
         </nav>
 
         <Routes>
@@ -119,6 +130,13 @@ function React공부모음() {
           <Route path="/useState-hook" element={<ReactUseStateHook></ReactUseStateHook>}></Route>
           <Route path="/useEffect-hook" element={<ReactuseEffectHook></ReactuseEffectHook>}></Route>
           <Route path="/useContext-hook" element={<ReactuseContext></ReactuseContext>}></Route>
+          <Route path="/useRef-hook" element={<ReactUseRefHook></ReactUseRefHook>}></Route>
+          <Route path="/useReducer-hook" element={<ReactUseReducer></ReactUseReducer>}></Route>
+          <Route path="/useCallback-hook" element={<ReactUseCallBack></ReactUseCallBack>}></Route>
+
+          <Route path="/useMemo-hook" element={<ReactUseMemo></ReactUseMemo>}></Route>
+
+          <Route path="/custom-hook" element={<ReactCustomHook></ReactCustomHook>}></Route>
         </Routes>
       </BrowserRouter>
     </>
